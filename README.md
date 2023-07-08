@@ -41,20 +41,18 @@ In simple words, this script is teaching a chatbot to talk and understand cybers
 
 To use this script, users need to have:
 
-1. **Python**: The script is written in Python, so it needs to be installed on your system. Python 3.6 or newer is recommended.
+1.	Install the required Python libraries: TensorFlow, Keras, Scikit-learn, NLTK, Gym, Requests, BeautifulSoup, and NumPy. You can do this with pip by running the command: pip install tensorflow keras scikit-learn nltk gym requests beautifulsoup4 numpy.
 
-2. **Python Libraries**: You need several Python libraries installed. These include TensorFlow for creating the neural network, Keras for constructing the AI model, NumPy for handling numerical data, BeautifulSoup and Requests for web scraping, NLTK for natural language processing, and gym for the reinforcement learning.
+2.	Replace the dialogues and labels placeholders in the script with your actual training data. dialogues should be a list of text dialogues related to cybersecurity, and labels should be a list of corresponding labels for each dialogue.
+(For better results the datasets should
+consist of sentences rather than words.)
+If you choose to go this route you can
+make slight modifications in the script
+to do so with ease. 
 
-3. **Data Source**: For the chatbot to learn from, you'll need a source of dialogues related to cybersecurity. These could be chat logs, forum threads, or any other large corpus of relevant text.
+4.	Run the script. It will scrape text from the provided URL, preprocess the text, and print the preprocessed words. It will also create a model with the provided input shape and number of classes, train the model with your data, and save the trained model as “chatbot_model.h5”. Additionally, it will perform Q-learning on the ‘FrozenLake-v0’ Gym environment and print the resulting Q-table.
 
-4. **Computing Resources**: Training AI models can be resource-intensive. A modern computer with a decent CPU and RAM is needed. A GPU is not strictly necessary but can greatly speed up training.
-
-5. **Basic Python Knowledge**: While not a strict requirement, a basic understanding of Python and general programming principles would be very useful for understanding and modifying the script.
-
-6. **Internet Connection**: As the script has a functionality to scrape data from the web, an active internet connection is required.
-
-7. **please make sure** that you replace the placeholder data (dialogues and labels) with your actual data for training the model. The two are set as placeholders for
-ease of customization.
+5.	After running the script, you can use the trained model saved as “chatbot_model.h5” for your tasks.
 
 ## Active Development Disclaimer
 
