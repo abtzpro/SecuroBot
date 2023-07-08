@@ -21,21 +21,25 @@ In a nutshell, this script is about creating a chatbot that can understand and p
 
 ## In simpler terms 
 
-1.	Load Libraries: This script loads a bunch of software tools that do different tasks, like Google’s TensorFlow which helps to build and train artificial intelligence models, or Gym for making AI play games to learn new things.
+This script is essentially a smart program that can learn from examples and perform tasks, like how a kid learns from observing the world around them.
 
-2.	Creating the chatbot model: create_model is like the brain of the chatbot, where it’s structured to learn and understand things. It uses special layers like an LSTM, which is sort of like the chatbot’s memory. It remembers past words to understand the context of what’s being said.
+1.	Setting Things Up: At the beginning, the script prepares a few tools it will need. Just like you might need a dictionary to understand a new language, the script prepares a list of common words that it should ignore when processing text.
 
-3.	Preprocessing Text: The preprocess_text function cleans up the language that the chatbot will learn from. It’s like when you simplify a tough concept into easier words. This step makes sure the chatbot understands what it’s learning.
+2.	Creating the Brain: Next, the script builds a “model”, which is like the brain of the operation. This model will later learn from examples and make decisions based on that learning. This is done in the create_model function.
 
-4.	Main function: This part of the script grabs the cybersecurity conversations from somewhere and gets them ready for the chatbot to learn from. Then, it uses create_model to create the chatbot’s brain.
+3.	Learning from Games: The script also learns from playing a game. This is called Q-learning. It’s as if the program is playing a video game, and each time it plays, it learns how to get a better score.
 
-5.	Splitting the Data: Just like in school, the chatbot has a “study phase” and a “test phase”. The cybersecurity conversations are split into a part for learning (training) and a part for testing how well it learned.
+4.	Reading the Internet: The script then visits a cybersecurity-related website and reads all the text there. This is a bit like how you might go to a library to research a topic.
 
-6.	Train the model: The chatbot now studies the training data. This is when it’s learning all about cybersecurity. It’s trying to understand the words and how they’re used in different situations.
+5.	Understanding the Text: Once the script has the text from the website, it processes that text to understand it better. It does this by removing common words and punctuation, and breaking down the text into simpler words. This is similar to highlighting important points in a textbook.
 
-7.	Save the model: After the chatbot has finished studying, we save its brain as a .h5 file. This way, we can use it later to chat about cybersecurity without having to learn everything again.
+6.	Learning from Examples: The script now takes the “dialogues” and “labels” (which you would have to provide) and feeds them into the “brain” it created earlier. The “brain” learns to associate dialogues with their corresponding labels. This is akin to a student learning by studying examples before an exam.
 
-In simple words, this script is teaching a chatbot to talk and understand cybersecurity. It’s like a tutor, giving the chatbot lessons, then testing it, and finally saving what it learned for later.
+7.	Saving the Knowledge: Once the “brain” has learned from the examples, the script saves this knowledge in a file named “chatbot_model.h5”. This is like writing down what you have learned in a notebook so that you can refer to it later.
+
+8.	Recalling the Learning: Finally, the script demonstrates its learning ability by playing the video game again, but this time it’s using the knowledge it gained from the previous plays. This is like replaying a level in a video game, but now you know where all the hidden treasures are.
+
+And that’s it! The script ends with a trained “brain” that can be used to analyze new cybersecurity dialogues, and it has also learned how to play a game efficiently. Just like a student after a long day of studying and playing video games!
 
 ## Notes & Requirements
 
