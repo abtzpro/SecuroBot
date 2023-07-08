@@ -53,8 +53,7 @@ To use this script, users need to have:
 
 6. **Internet Connection**: As the script has a functionality to scrape data from the web, an active internet connection is required.
 
-7. **please make sure** that your data source files “your_data_source.csv” and “your_labels_source.csv” are correctly provided and contain the required data.
-The two are set as placeholders for
+7. **please make sure** that you replace the placeholder data (dialogues and labels) with your actual data for training the model. The two are set as placeholders for
 ease of customization.
 
 ## Active Development Disclaimer
