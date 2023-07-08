@@ -37,7 +37,7 @@ In a nutshell, this script is about creating a chatbot that can understand and p
 
 In simple words, this script is teaching a chatbot to talk and understand cybersecurity. It’s like a tutor, giving the chatbot lessons, then testing it, and finally saving what it learned for later.
 
-## Notes 
+## Notes & Requirements
 
 To use this script, users need to have:
 
